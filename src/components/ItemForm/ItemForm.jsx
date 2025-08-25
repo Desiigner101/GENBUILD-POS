@@ -59,16 +59,6 @@ const ItemForm = () => {
                                     className="form-control"
                                     placeholder="Write Content Here..."></textarea>
                                 </div>
-                                
-                                <div className="mb-3">
-                                    <label htmlFor="bgColor" className="form-label">Background color</label>
-                                    <br/>
-                                    <input
-                                    type="color"
-                                    name="bgColor"
-                                    id="bgColor"
-                                    placeholder="#ffffff"/>
-                                </div>
 
                                 <button 
                                 type="submit" 
