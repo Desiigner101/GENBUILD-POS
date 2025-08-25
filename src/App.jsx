@@ -1,7 +1,9 @@
+import MenuBar from "./components/MenuBar/MenuBar";
+
 const App = () => {
   return (
     <div>
-      Hello World
+      <MenuBar />
     </div>
   )
 }
