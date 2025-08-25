@@ -15,13 +15,20 @@ This project takes a lot of its styling and palettes from a Figma design project
 
 # Tech Stack ⚙️
 
-Frontend: React.js ⚛️
+Frontend: React + Vite
 
-Backend: Spring Boot 🌱
+Backend: Spring Boot 
 
-Database: (to be integrated as I progress)
+Database & Tools: 
+- **MySQL** – Relational database used for data storage and management.  
+- **XAMPP** – Local development environment for running MySQL and Apache.  
+- **Axios** – Promise-based HTTP client for making API requests.  
+- **JPA (Java Persistence API)** – Abstraction for database operations in Java.  
+- **Lombok** – Reduces boilerplate code in Java (e.g., getters, setters, constructors).
+- **React Router DOM** – Declarative routing for React applications.   
 
-Styling: Inspired by my Figma project 🎨
+Styling: 
+- **Bootstrap CSS** – Frontend framework for responsive design and styling.  
 
 This setup is challenging for me, but I believe it’s the right way to push myself into full-stack development.
 
