@@ -1,19 +1,19 @@
-# Retail Billing Software 🛒
+# Retail Billing Software 
 
 Welcome to my Retail Billing Software project!
 This project is a humble step in my journey as a student developer. It’s inspired by my recent mobile app project GenBuild, where I sell computer parts mainly used by gamers. While GenBuild was all about PC enthusiasts, this new project aims to expand that idea into a general retail billing system, something more versatile and practical.
 
-# Why I’m Building This 🌱
+# Why I’m Building This 
 
 As a student, I’m constantly looking for ways to grow and explore new fields in software development. This project is my first ever Point of Sale (POS) system, and it’s not about perfection but about learning.
 
 I’ve been scattering around the internet, reading guides, and piecing things together just to understand how such systems work. More than anything, this is a passion project a personal milestone that blends my curiosity, previous works, and design inspirations.
 
-# Design Inspiration 🎨
+# Design Inspiration 
 
 This project takes a lot of its styling and palettes from a Figma design project I worked on last semester. I believe design isn’t just about looks—it’s about creating something functional, comfortable, and meaningful to use. That’s the spirit I’m carrying into this project.
 
-# Tech Stack ⚙️
+# Tech Stack ⚙
 
 Frontend: React + Vite
 
@@ -28,11 +28,12 @@ Database & Tools:
 - **React Router DOM** – Declarative routing for React applications.   
 
 Styling: 
-- **Bootstrap CSS** – Frontend framework for responsive design and styling.  
+- **Bootstrap CSS** – Frontend framework for responsive design and styling.
 
+  
 This setup is challenging for me, but I believe it’s the right way to push myself into full-stack development.
 
-# What This Means to Me ✨
+# What This Means to Me 
 
 This Retail Billing Software represents:
 
