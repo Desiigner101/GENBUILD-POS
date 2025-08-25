@@ -13,7 +13,7 @@ I’ve been scattering around the internet, reading guides, watching online tuto
 
 This project takes a lot of its styling and palettes from a Figma design project I worked on last semester. I believe design isn’t just about looks—it’s about creating something functional, comfortable, and meaningful to use. That’s the spirit I’m carrying into this project.
 
-# Tech Stack ⚙
+# Tech Stack 
 
 Frontend: React + Vite
 
