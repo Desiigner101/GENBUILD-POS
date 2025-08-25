@@ -7,7 +7,7 @@ This project is a humble step in my journey as a student developer. It’s inspi
 
 As a student, I’m constantly looking for ways to grow and explore new fields in software development. This project is my first ever Point of Sale (POS) system, and it’s not about perfection but about learning.
 
-I’ve been scattering around the internet, reading guides, and piecing things together just to understand how such systems work. More than anything, this is a passion project a personal milestone that blends my curiosity, previous works, and design inspirations.
+I’ve been scattering around the internet, reading guides, watching online tutorial videos, and piecing things together just to understand how such systems work. More than anything, this is a passion project, a personal milestone that blends my curiosity, previous works, and design inspirations.
 
 # Design Inspiration 
 
