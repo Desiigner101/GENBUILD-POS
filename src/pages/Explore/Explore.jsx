@@ -22,7 +22,7 @@ const Explore = () => {
             <div className="right-column d-flex flex-column">
                 <div className="customer-form-container" style={{height: '15%'}}>
                     customer form
-                </div>                                                                              //15 + 55 = 70 + 30 = 100%
+                </div>                                                                             
                 <hr className="my-3 text-light"/>
 
                 <div className="cart-items-container" style={{height: '55%', overflowY: 'auto'}}>
