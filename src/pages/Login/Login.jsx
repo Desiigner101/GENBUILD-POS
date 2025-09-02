@@ -1,6 +1,44 @@
+import { useState } from 'react';
 import './Login.css';
+import toast from 'react-hot-toast';
+import { login } from '../../Service/AuthService';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate();
+    const [loading, setLoading] = useState(false);
+    const [data, setData] = useState({
+        email: "",
+        password: "",
+    });
+
+    const onChangeHandler = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        setData((data) => ({...data, [name]: value}));
+    }
+
+    const onSubmitHandler = async(e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        try{
+            const response = await login(data);
+            if(response.status === 200){
+                toast.success("Login Successful");
+                localStorage.setItem("token", response.data.token);
+                localStorage.setItem("role", response.data.role);
+                set
+                navigate("/dashboard");
+            }
+
+        }catch(error){
+            console.error(error);
+            toast.error("Email/Password Invalid. Please try again.");
+        }finally{
+            setLoading(false);
+        }
+
     return (
         <div className="div bg-light d-flex align-items-center justify-content-center vh-100 login-background">
             <div className="card shadow-lg w-100" style={{maxWidth: '480px'}}>
@@ -13,7 +51,7 @@ const Login = () => {
                     </div>
 
                     <div className="mt-4">
-                        <form>
+                        <form onSubmit={onSubmitHandler}>
                             <div className="mb-4">
                                 <label htmlFor="email" className="form-label text-muted">
                                     Email address
@@ -24,7 +62,9 @@ const Login = () => {
                                 name="email" 
                                 id="email" 
                                 placeholder="yourname@example.com" 
-                                className="form-control" />
+                                className="form-control" 
+                                onChange={onChangeHandler}
+                                value={data.email}/>
                             </div>
 
                             <div className="mb-4">
@@ -37,7 +77,9 @@ const Login = () => {
                                 name="password" 
                                 id="password" 
                                 placeholder="********" 
-                                className="form-control" />
+                                className="form-control" 
+                                onChange={onChangeHandler}
+                                value={data.password}/>
                             </div>
 
                             <div className="d-grid">
@@ -50,7 +92,8 @@ const Login = () => {
                 </div>
             </div>
         </div>
-    )
+        );
+    }
 }
 
 export default Login;
