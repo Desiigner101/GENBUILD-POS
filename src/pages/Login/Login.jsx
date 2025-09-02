@@ -18,6 +18,32 @@ const Login = () => {
                                 <label htmlFor="email" className="form-label text-muted">
                                     Email address
                                 </label>
+                                
+                                <input 
+                                type="text" 
+                                name="email" 
+                                id="email" 
+                                placeholder="yourname@example.com" 
+                                className="form-control" />
+                            </div>
+
+                            <div className="mb-4">
+                                <label htmlFor="password" className="form-label text-muted">
+                                    Password
+                                </label>
+                                
+                                <input 
+                                type="password" 
+                                name="password" 
+                                id="password" 
+                                placeholder="********" 
+                                className="form-control" />
+                            </div>
+
+                            <div className="d-grid">
+                                <button type="submit" className="btn btn-dark btn-lg">
+                                    Sign in
+                                </button>
                             </div>
                         </form>
                     </div>
