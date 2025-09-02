@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import './Login.css';
 import toast from 'react-hot-toast';
 import { login } from '../../Service/AuthService';
 import { useNavigate } from 'react-router-dom';
+import { AppContext } from '../../context/AppContext';
 
 const Login = () => {
+    const {setAuthData} = useContext(AppContext);
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState({
@@ -28,7 +30,7 @@ const Login = () => {
                 toast.success("Login Successful");
                 localStorage.setItem("token", response.data.token);
                 localStorage.setItem("role", response.data.role);
-                set
+                setAuthData(response.data.token, response.data.role);
                 navigate("/dashboard");
             }
 
@@ -38,7 +40,7 @@ const Login = () => {
         }finally{
             setLoading(false);
         }
-
+    }
     return (
         <div className="div bg-light d-flex align-items-center justify-content-center vh-100 login-background">
             <div className="card shadow-lg w-100" style={{maxWidth: '480px'}}>
@@ -92,8 +94,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
-        );
-    }
+    );
 }
 
 export default Login;

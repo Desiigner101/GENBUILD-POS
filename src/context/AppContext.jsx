@@ -6,6 +6,7 @@ export const AppContext = createContext(null);
 export const AppContextProvider = (props) => {
 
     const [categories, setCategories] = useState([]);
+    const [auth, sethAuth] = useState({token: null, role: null});
 
 
     useEffect(() => {
@@ -17,9 +18,15 @@ export const AppContextProvider = (props) => {
         loadData();
     }, []);
 
+    const setAuthData = (token, role) => {
+        sethAuth({token, role});
+    }
+
     const contextValue = {
         categories,
-        setCategories
+        setCategories,
+        auth,
+        setAuthData,
     }
 
     return (
