@@ -7,12 +7,15 @@ export const AppContextProvider = (props) => {
 
     const [categories, setCategories] = useState([]);
     const [auth, sethAuth] = useState({token: null, role: null});
+    const [itemsData, setItemsData] = useState([]);
 
 
     useEffect(() => {
         async function loadData(){
             const response = await fetchCategories();
+            const itemResponse = await fetchItems();
             setCategories(response.data);
+            setItemsData(itemResponse.data);
         }
 
         loadData();
@@ -27,6 +30,8 @@ export const AppContextProvider = (props) => {
         setCategories,
         auth,
         setAuthData,
+        itemsData,
+        setItemsData,
     }
 
     return (
