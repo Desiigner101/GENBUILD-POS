@@ -28,7 +28,7 @@ const ItemForm = () => {
         setLoading(true);
         const formData = new FormData();
         formData.append("item", JSON.stringify(data));
-        formData.append("file", image);
+        formData.append("image", image);
         try{
             if(!image){
                 toast.error("Select Image")
