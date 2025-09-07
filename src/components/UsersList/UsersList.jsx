@@ -1,12 +1,24 @@
 import { useState } from "react";
 import { deleteUser } from "../../Service/UserService";
+import toast from "react-hot-toast";
 
 const UsersList = ({users, setUsers}) => {
-   const [searchTerm, setSearchItem] = useState("");
+   const [searchTerm, setSearchTerm] = useState("");
 
    const filteredUsers = users.filter(user => 
-        user.name.toLowerCase().includes(searchTerm.toLowerCase())
-   )
+        user?.name?.toLowerCase().includes(searchTerm.toLowerCase())
+   );
+
+   const deleteByUserId = async (id) => {
+        try{
+            await deleteUser(id);
+            setUsers(prevUsers => prevUsers.filter(user => user.userId !== id));
+            toast.success("User Deleted");
+        }catch(e){
+            console.error(e);
+            toast.error("Unable to delete the user");
+        }
+   }
    
     return (
          <div className="category-list-container" style={{height: '100vh', overflowY: 'auto', overflowX: 'hidden'}}>
@@ -18,7 +30,7 @@ const UsersList = ({users, setUsers}) => {
                     id="keyword" 
                     placeholder="Search by keyword" 
                     className="form-control"
-                    onChange={(e) => setSearchItem(e.target.value)}
+                    onChange={(e) => setSearchTerm(e.target.value)}
                     value={searchTerm}/>
 
                     <span className="input-group-text bg-warning">
