@@ -1,7 +1,8 @@
-# Retail Billing Software 
+# Retail Billing Software
 
 Welcome to my Retail Billing Software project!
 This project is a humble step in my journey as a student developer. It’s inspired by my recent mobile app project GenBuild, where I sell computer parts mainly used by gamers. While GenBuild was all about PC enthusiasts, this new project aims to expand that idea into a general retail billing system, something more versatile and practical.
+
 
 # Why I’m Building This 
 
@@ -15,7 +16,7 @@ This project takes a lot of its styling and palettes from a Figma design project
 
 # Tech Stack 
 
-Frontend: React + Vite
+  Frontend: React + Vite
 
 Backend: Spring Boot 
 
