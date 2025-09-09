@@ -16,7 +16,7 @@ This project takes a lot of its styling and palettes from a Figma design project
 
 # Tech Stack 
 
-Frontend: React + Vite
+  Frontend: React + Vite
 
 Backend: Spring Boot 
 
