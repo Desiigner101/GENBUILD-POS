@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { AppContext } from "../../context/AppContext";
+import {deleteItem} from "../../Service/ItemService";
 import toast from "react-hot-toast";
 import './ItemList.css';
 
@@ -37,7 +38,7 @@ const ItemList = () => {
                     id="keyword" 
                     placeholder="Search by keyword" 
                     className="form-control"
-                    onChange={(e) => setSearchItem(e.target.value)}
+                    onChange={(e) => setSearchTerm(e.target.value)}
                     value={searchTerm}/>
 
                     <span className="input-group-text bg-warning">
@@ -52,8 +53,8 @@ const ItemList = () => {
                     <div className="col-12" key={index}>
                         <div className="card p-3 bg-dark">
                             <div className="d-flex align-items-center">
-                                <div className="item-image">
-                                    <img src={item.imgUrl} alt={item.name} width={48}/>
+                                <div style={{marginRight: '15px'}}>
+                                    <img src={item.imgUrl} alt={item.name} className="item-image" />
                                 </div>
 
                                 <div className="flex-grow-1">
