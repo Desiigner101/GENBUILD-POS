@@ -4,6 +4,7 @@ Welcome to my Retail Billing Software project!
 This project is a humble step in my journey as a student developer. It’s inspired by my recent mobile app project GenBuild, where I sell computer parts mainly used by gamers. While GenBuild was all about PC enthusiasts, this new project aims to expand that idea into a general retail billing system, something more versatile and practical.
 
 <img width="1920" height="958" alt="genbuild_version1" src="https://github.com/user-attachments/assets/8235e332-e41f-4b3a-98bd-f20c7f54f935" />
+<img width="1920" height="937" alt="GENBUILD_ITEMS" src="https://github.com/user-attachments/assets/4b8f4502-356b-494a-a68b-f52105678b75" />
 
 
 
