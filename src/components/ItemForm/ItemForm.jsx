@@ -5,7 +5,7 @@ import{addItem} from "../../Service/ItemService.js"
 import {assets} from "../../assets/assets.js"
 
 const ItemForm = () => {
-    const {categories, itemsData, setItemsData} = useContext(AppContext);
+    const {categories, itemsData, setItemsData, setCategories} = useContext(AppContext);
 
     const [image, setImage] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -38,7 +38,8 @@ const ItemForm = () => {
             const response = await addItem(formData);
             if(response.status === 201){
                 setItemsData([...itemsData, response.data])
-                //TODO: update the category state
+                setCategories((prevCategories) => 
+                prevCategories.map((category) => category.categoryId === data.categoryId ? {...category, items:category.items + 1} : category))
                 toast.success("Item Added")
                 setData({
                     name: "",
