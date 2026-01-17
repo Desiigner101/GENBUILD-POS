@@ -6,7 +6,9 @@ This project is a humble step in my journey as a student developer. It’s inspi
 <img width="1920" height="958" alt="genbuild_version1" src="https://github.com/user-attachments/assets/8235e332-e41f-4b3a-98bd-f20c7f54f935" />
 <img width="1920" height="937" alt="GENBUILD_ITEMS" src="https://github.com/user-attachments/assets/4b8f4502-356b-494a-a68b-f52105678b75" />
 
+stoninoletsgoo
 
+rjrjrjrrjrjrjrrj
 # Why I’m Building This 
 
 As a student, I’m constantly looking for ways to grow and explore new fields in software development. This project is my first ever Point of Sale (POS) system, and it’s not about perfection but about learning.
