@@ -8,7 +8,7 @@ This project is a humble step in my journey as a student developer. It’s inspi
 
 stoninolets
 
-gfggggggg
+gfgggggg
 # Why I’m Building This 
 
 As a student, I’m constantly looking for ways to grow and explore new fields in software development. This project is my first ever Point of Sale (POS) system, and it’s not about perfection but about learning.
