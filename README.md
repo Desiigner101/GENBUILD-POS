@@ -7,7 +7,7 @@ This project is a humble step in my journey as a student developer. It’s inspi
 <img width="1920" height="937" alt="GENBUILD_ITEMS" src="https://github.com/user-attachments/assets/4b8f4502-356b-494a-a68b-f52105678b75" />
 
 stoninoletsgoo
-37
+36
 asdasdas
 
 # Why I’m Building This 
