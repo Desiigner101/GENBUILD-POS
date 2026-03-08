@@ -9,7 +9,7 @@ This project is a humble step in my journey as a student developer. It’s inspi
 stoninoletsgoo
 18
 
-ajsdfsdfsd
+ajsdfsdf
 checkhjhj
 
 # Why I’m Building This 
